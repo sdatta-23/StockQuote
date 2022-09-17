@@ -10,24 +10,25 @@ import com.Api.Stock.dto.QuotationCustomResponseDTO;
 import com.Api.Stock.service.ConsumerService;
 
 @RestController
-@RequestMapping(path="stockings")
+@RequestMapping(path="stocks")
 
 public class StockController {
 	
 	@Autowired
 	ConsumerService consumerService;
 	
-	@GetMapping("/quotations/asString")
+	//Consuming Global Quotes API as String Response
+	@GetMapping("/quotes/asString")
 	public String getStockQuotationsAsString(@RequestParam String symbol) 
 	{
-		System.out.println("Calls the Global Quotes as String API");
+		System.out.println("Calling the Global Quotes API as String Response");
 		return consumerService.getStockQuotationsAsString(symbol);
 	}
-	//this one 2nd round
-	@GetMapping("quotations")
+	//Consuming Global Quotes API with Proper Response Object
+	@GetMapping("/quotes")
 	public QuotationCustomResponseDTO getStockQuotations(@RequestParam String symbol)
 	{
-		System.out.println("Calls the Global Quotes normally (withou STRING) API");
+		System.out.println("Calling the Global Quotes API with Proper Response Object");
 		return consumerService.getQuotationServiceResponse(symbol);
 	}
 
