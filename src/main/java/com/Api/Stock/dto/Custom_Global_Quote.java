@@ -5,70 +5,192 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Custom_Global_Quote {
 
 	@JsonProperty("Symbol")
-	private String Symbol = null;
+	private String symbol = null;
 	
 	@JsonProperty("Open")
-	private String Open = null;
+	private String open = null;
 	
 	@JsonProperty("High")
-	private String High = null;
+	private String high = null;
 	
 	@JsonProperty("Low")
-	private String Low = null;
+	private String low = null;
 	
 	@JsonProperty("Price")
-	private String Price = null;
+	private String price = null;
 	
 	@JsonProperty("Volume")
-	private String Volume = null;
+	private String volume = null;
+	
+	@JsonProperty("Started Today as")
+	private String dayStartIndicator = null;
+	
+	@JsonProperty("Currently Trading as")
+	private String currentIndicator = null;
 
 	public String getSymbol() {
-		return Symbol;
+		return symbol;
 	}
 
 	public void setSymbol(String symbol) {
-		Symbol = symbol;
+		this.symbol = symbol;
 	}
 
 	public String getOpen() {
-		return Open;
+		return open;
 	}
 
 	public void setOpen(String open) {
-		Open = open;
+		this.open = open;
 	}
 
 	public String getHigh() {
-		return High;
+		return high;
 	}
 
 	public void setHigh(String high) {
-		High = high;
+		this.high = high;
 	}
 
 	public String getLow() {
-		return Low;
+		return low;
 	}
 
 	public void setLow(String low) {
-		Low = low;
+		this.low = low;
 	}
 
 	public String getPrice() {
-		return Price;
+		return price;
 	}
 
 	public void setPrice(String price) {
-		Price = price;
+		this.price = price;
 	}
 
 	public String getVolume() {
-		return Volume;
+		return volume;
 	}
 
 	public void setVolume(String volume) {
-		Volume = volume;
+		this.volume = volume;
 	}
+
+	public String getDayStartIndicator() {
+		return dayStartIndicator;
+	}
+
+	public void setDayStartIndicator(String dayStartIndicator) {
+		this.dayStartIndicator = dayStartIndicator;
+	}
+
+	public String getCurrentIndicator() {
+		return currentIndicator;
+	}
+
+	public void setCurrentIndicator(String currentIndicator) {
+		this.currentIndicator = currentIndicator;
+	}
+
+
+	
+	
+}
+package com.Api.Stock.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class Custom_Global_Quote {
+
+	@JsonProperty("Symbol")
+	private String symbol = null;
+	
+	@JsonProperty("Open")
+	private String open = null;
+	
+	@JsonProperty("High")
+	private String high = null;
+	
+	@JsonProperty("Low")
+	private String low = null;
+	
+	@JsonProperty("Price")
+	private String price = null;
+	
+	@JsonProperty("Volume")
+	private String volume = null;
+	
+	@JsonProperty("Started Today as")
+	private String dayStartIndicator = null;
+	
+	@JsonProperty("Currently Trading as")
+	private String currentIndicator = null;
+
+	public String getSymbol() {
+		return symbol;
+	}
+
+	public void setSymbol(String symbol) {
+		this.symbol = symbol;
+	}
+
+	public String getOpen() {
+		return open;
+	}
+
+	public void setOpen(String open) {
+		this.open = open;
+	}
+
+	public String getHigh() {
+		return high;
+	}
+
+	public void setHigh(String high) {
+		this.high = high;
+	}
+
+	public String getLow() {
+		return low;
+	}
+
+	public void setLow(String low) {
+		this.low = low;
+	}
+
+	public String getPrice() {
+		return price;
+	}
+
+	public void setPrice(String price) {
+		this.price = price;
+	}
+
+	public String getVolume() {
+		return volume;
+	}
+
+	public void setVolume(String volume) {
+		this.volume = volume;
+	}
+
+	public String getDayStartIndicator() {
+		return dayStartIndicator;
+	}
+
+	public void setDayStartIndicator(String dayStartIndicator) {
+		this.dayStartIndicator = dayStartIndicator;
+	}
+
+	public String getCurrentIndicator() {
+		return currentIndicator;
+	}
+
+	public void setCurrentIndicator(String currentIndicator) {
+		this.currentIndicator = currentIndicator;
+	}
+
+
 	
 	
 }

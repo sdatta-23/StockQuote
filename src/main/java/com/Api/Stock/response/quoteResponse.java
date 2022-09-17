@@ -2,9 +2,9 @@ package com.Api.Stock.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class quoteResponse {
+public class QuoteResponse {
  
-	@JsonProperty("Global quotes")
+	@JsonProperty("Global Quote")
 	private GlobalQuote globalquote = null;
 
 	public GlobalQuote getGlobalquote() {
